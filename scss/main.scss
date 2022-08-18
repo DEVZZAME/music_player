@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+/* font-family: 'Zen Maru Gothic', sans-serif; */
+
+/* RESET */
+@import "reset";
+
+body {
+  font: 16px/1 "Zen Maru Gothic";
+}
+
+//body
+
+figure {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+
+  h1 {
+    position: relative;
+    top: 4vh;
+    left: 4vw;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    // font-size: 0;
+
+    strong {
+      font-size: 40px;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    
+    //strong
+    span {
+      position: absolute;
+      top: 5.8vh;
+      font-size: 16px;
+      color: #fff;
+      opacity: 0.8;
+      letter-spacing: 0.6px;
+    }
+
+    //span
+  }
+
+  @import "panel";
+  @import "btns";
+
+  //h1
+  .menu {
+    position: absolute;
+    top: 4vh;
+    right: 4vw;
+    font-size: 30px;
+    color: #fff;
+    i {
+    }
+  }
+
+  //.menu
+  > p {
+    position: absolute;
+    bottom: 7vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+  }
+
+  //p
+}
+
+//figure
